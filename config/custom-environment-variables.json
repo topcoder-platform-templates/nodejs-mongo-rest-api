@@ -1,0 +1,7 @@
+{
+  "authSecret": "AUTH_SECRET",
+  "port": "PORT",
+  "logLevel": "LOG_LEVEL",
+  "version": "VERSION",
+  "MONGODB_URI": "MONGODB_URI"
+}

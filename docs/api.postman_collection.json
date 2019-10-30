@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "b8bab3a6-494d-4f18-9ab7-fb0368fbf458",
+		"name": "api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST /tests",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"handle\":\"thomas\"\n\t\n}"
+				},
+				"url": {
+					"raw": "{{url}}/tests",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"tests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /tests",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/tests",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"tests"
+					],
+					"query": [
+						{
+							"key": "handle",
+							"value": "thomaskranitsas",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE  /tests",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/tests/5da40b0531a5685e222bf5b5",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"tests",
+						"5da40b0531a5685e222bf5b5"
+					],
+					"query": [
+						{
+							"key": "handle",
+							"value": "thomaskranitsas",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /tests by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_token}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"handle\":\"thomasKrantisas\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/tests/5da40af931a56838252bf5b4",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"tests",
+						"5da40af931a56838252bf5b4"
+					],
+					"query": [
+						{
+							"key": "handle",
+							"value": "thomaskranitsas",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT  /tests ",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{user_token}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"handle\":\"ramkumar\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/tests/5da40af931a56838252bf5b4",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"tests",
+						"5da40af931a56838252bf5b4"
+					],
+					"query": [
+						{
+							"key": "handle",
+							"value": "thomaskranitsas",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
